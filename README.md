@@ -1,23 +1,15 @@
-# Hello world docker action
+# A PHP Security Scanner Action
 
-This action prints "Hello World" to the log or "Hello" + the name of a person to greet. To learn how this action was built, see "[Creating a Docker container action](https://help.github.com/en/articles/creating-a-docker-container-action)" in the GitHub Help documentation.
+This action uses [Psecio Parse](https://github.com/psecio/parse) tool which is a static scanning tool to review your PHP code for potential security-related issues.
 
 ## Inputs
 
-### `who-to-greet`
+No inputs to be given.
 
-**Required** The name of the person to greet. Default `"World"`.
-
-## Outputs
-
-### `time`
-
-The time we greeted you.
 
 ## Example usage
 
 ```yaml
-uses: actions/hello-world-docker-action@master
-with:
-  who-to-greet: 'Mona the Octocat'
+uses: umutphp/php-psecio-parse-action@v1
+
 ```
